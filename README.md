@@ -15,7 +15,7 @@
 
 **AI Career Copilot** is a full-stack SaaS application that helps job seekers improve their resumes using AI. Users upload their resume, paste a job description, and receive instant AI-powered feedback — including an ATS compatibility score, keyword gap analysis, section-by-section feedback, and AI-rewritten bullet points. The app also exports a polished, optimized PDF ready to submit.
 
-**Live Demo:** [your-app.vercel.app](https://your-app.vercel.app)
+**Live Demo:** [your-app.vercel.app](https://ai-career-copilot-tqs7.vercel.app/)
 
 ---
 
@@ -242,8 +242,8 @@ MIT License — feel free to use this project as inspiration for your own portfo
 
 Built by **[Your Name]**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monisha-yadav-425212310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/monishay20)
 
 ---
 
