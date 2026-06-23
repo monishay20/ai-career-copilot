@@ -65,7 +65,7 @@ export default function ScoreHistoryChart({ data }: { data: DataPoint[] }) {
                 borderRadius: "8px",
                 fontSize: "12px",
               }}
-              formatter={(value: any, name: string) => [
+              formatter={(value: any, name: any) => [
                 `${value}/100`,
                 name === "atsScore" ? "ATS Score" : "Job Match Score",
               ]}

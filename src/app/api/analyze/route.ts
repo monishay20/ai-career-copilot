@@ -148,7 +148,7 @@ export async function POST(req: NextRequest) {
     // Zod validation
     const parsed = analyzeSchema.safeParse({ jobDescription });
     if (!parsed.success) {
-      return NextResponse.json({ error: parsed.error?.errors[0]?.message ?? "Invalid input" }, { status: 400 });
+      return NextResponse.json({ error: parsed.error?.issues[0]?.message ?? "Invalid input" }, { status: 400 });
     }
 
     const fileName = file.name;
