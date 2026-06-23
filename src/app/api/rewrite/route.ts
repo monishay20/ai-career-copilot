@@ -6,6 +6,8 @@ import { rewriteRatelimit } from "@/lib/ratelimit";
 import { rewriteSchema } from "@/lib/validation";
 import { logAIRequest } from "@/lib/aiLogger";
 
+export const runtime = "nodejs";
+
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 async function rewriteWithGemini(resumeText: string, jobDescription?: string) {
