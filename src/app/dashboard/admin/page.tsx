@@ -21,7 +21,7 @@ export default async function AdminPage() {
     ? Math.round((successfulRequests / totalRequests) * 100)
     : 0;
   const avgResponseTime = totalRequests > 0
-    ? Math.round(logs.reduce((sum, l: any) => sum + l.responseTime, 0) / totalRequests)
+    ? Math.round(logs.reduce((sum: number, l: any) => sum + l.responseTime, 0) / totalRequests)
     : 0;
 
   const modelUsage = logs.reduce((acc: Record<string, number>, log: any) => {
