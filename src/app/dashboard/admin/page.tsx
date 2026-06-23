@@ -13,22 +13,23 @@ export default async function AdminPage() {
     take: 50,
   });
 
+  
   const totalRequests = logs.length;
-  const successfulRequests = logs.filter((l) => l.success).length;
-  const failedRequests = logs.filter((l) => !l.success).length;
+  const successfulRequests = logs.filter((l: any) => l.success).length;
+  const failedRequests = logs.filter((l: any) => !l.success).length;
   const successRate = totalRequests > 0
     ? Math.round((successfulRequests / totalRequests) * 100)
     : 0;
   const avgResponseTime = totalRequests > 0
-    ? Math.round(logs.reduce((sum, l) => sum + l.responseTime, 0) / totalRequests)
+    ? Math.round(logs.reduce((sum, l: any) => sum + l.responseTime, 0) / totalRequests)
     : 0;
 
-  const modelUsage = logs.reduce((acc: Record<string, number>, log) => {
+  const modelUsage = logs.reduce((acc: Record<string, number>, log: any) => {
     acc[log.model] = (acc[log.model] || 0) + 1;
     return acc;
   }, {});
 
-  const actionBreakdown = logs.reduce((acc: Record<string, number>, log) => {
+  const actionBreakdown = logs.reduce((acc: Record<string, number>, log: any) => {
     acc[log.action] = (acc[log.action] || 0) + 1;
     return acc;
   }, {});
